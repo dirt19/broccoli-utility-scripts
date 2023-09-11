@@ -1,0 +1,34 @@
+[user]
+	name = UserFirst UserLast
+	email = user@domain.com
+[protocol]
+	version = 2
+[core]
+        editor = code --wait
+        autocrlf = input
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+# VSCode Difftool
+## End of extra block
+[credential]
+	helper = store
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[commit]
+	template = /mnt/c/Users/USER/Documents/git-commit-message-template.txt
+[pull]
+    ff = only
+[credential "https://github.com"]
+	useHttpPath = true
+	username = gitUser
+[init]
+	templatedir = /home/USER/.git-template
