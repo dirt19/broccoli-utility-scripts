@@ -42,7 +42,7 @@ const checkKey = (obj, keyName) => {
 
 const parseManager = (managerDn) => {
     // TODO: What about same name managers?
-    //example string "CN=First Last,OU=Users,OU=Sunnyvale,DC=am,DC=trimblecorp,DC=net";
+    //example string "CN=First Last,OU=Users,OU=Sunnyvale,DC=am,DC=company,DC=net";
     var strArray = managerDn.split(",")[0].split("=");
     return strArray[1];
 }
