@@ -6,7 +6,7 @@
 ##
 ## Description:
 ## This is to be used to rotate the credentials for App Admin and RDS access for
-## AWS EC2 E-Tools applications. The purpose is to change the RDS credentials.
+## AWS EC2 applications. The purpose is to change the RDS credentials.
 ##
 ## Usage:
 ##    [root@etd-bb-app01 scripts]# source password_rotation.sh
